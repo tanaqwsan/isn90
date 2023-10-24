@@ -343,7 +343,7 @@ function rq(state)
     httpClient = HttpClient.new()
     httpClient:setMethod(Method.get)
     httpClient.url = ipBotStatus..'?growid='..getBot().name..'&world='..getBot().level.."|"..getWorld().name.."__"..tostring(ribu(getBot().gem_count))..'&ip='..getLocalIp()..'&state='..state
-    httpClient.headers["User-Agent"] = "Lucy"
+    httpClient.headers["User-Agent"] = "Lucifer"
     httpClient:request()
 end
 rq("starting..")
